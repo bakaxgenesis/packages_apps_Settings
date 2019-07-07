@@ -491,6 +491,11 @@ public class Settings extends SettingsActivity {
     /** Activity for the Reset mobile network settings. */
     public static class ResetMobileNetworkSettingsActivity extends SettingsActivity { /* empty */ }
 
+    /**
+     * Activity for SmartPixelsSettings
+     */
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
+
     // BeyondOrdinary Additions.
     public static class BeyondOrdinarySettingsActivity extends SettingsActivity {}
 }

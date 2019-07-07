@@ -203,6 +203,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.beyond.ordinary.BeyondDashboard;
 
+import com.beyond.ordinary.fragments.SmartPixelsSettings;
+
 public class SettingsGateway {
 
     /**
@@ -392,6 +394,7 @@ public class SettingsGateway {
             ScreenTimeoutSettings.class.getName(),
             ResetNetwork.class.getName(),
             VibrationIntensitySettingsFragment.class.getName(),
+            SmartPixelsSettings.class.getName(),
             BeyondDashboard.class.getName(),
     };
 
@@ -439,6 +442,7 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
             Settings.BeyondOrdinarySettingsActivity.class.getName(),
     };
 }
