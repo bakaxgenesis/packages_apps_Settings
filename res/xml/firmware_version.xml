@@ -31,16 +31,20 @@
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
+        android:icon="@drawable/ic_android_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:searchable="false"
+        settings:layout="@layout/top_level_preference_top"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
     <!-- GenesisOS version -->
     <Preference
         android:key="genesis_firmware_version"
         android:title="@string/genesis_firmware_version"
+        android:icon="@drawable/ic_genesis_version"
         android:summary="@string/summary_placeholder"
+        settings:layout="@layout/top_level_preference_middle"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.GenesisFirmwareVersionPreferenceController"/>
 
@@ -48,14 +52,18 @@
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
+        android:icon="@drawable/ic_dot_security"
         settings:enableCopying="true"
+        settings:layout="@layout/top_level_preference_middle"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
     <!-- Maintainer/s name/s -->
     <Preference
         android:key="genesis_maintainer"
         android:title="@string/genesis_maintainer_title"
+        android:icon="@drawable/ic_settings_display_acc"
         android:summary="@string/genesis_maintainer_summary"
+        settings:layout="@layout/top_level_preference_middle"
         settings:enableCopying="true"/>
 
     <!-- Mainline module version
@@ -64,33 +72,35 @@
         android:title="@string/module_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
+        settings:layout="@layout/top_level_preference_middle"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/ -->
 
     <!-- Baseband -->
     <Preference
         android:key="base_band"
         android:title="@string/baseband_version"
+        android:icon="@drawable/ic_settings_system_dashboard_acc"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
+        settings:layout="@layout/top_level_preference_middle"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
     <!-- Kernel -->
     <Preference
         android:key="kernel_version"
         android:title="@string/kernel_version"
+        android:icon="@drawable/ic_settings_omnigears"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
+        settings:layout="@layout/top_level_preference_bottom"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- Build -->
+    <!-- Build
     <Preference
         android:key="os_build_number"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
 
 </PreferenceScreen>
